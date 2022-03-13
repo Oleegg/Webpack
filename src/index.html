@@ -14,6 +14,9 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
+                        <a class="nav__link" href="#skills">Skills and Project</a>
+                    </li>
+                    <li class="nav__item">
                         <a class="nav__link" href="#contacts">Contacts</a>
                     </li>
                     <li class="nav__item">
@@ -21,9 +24,6 @@
                     </li>
                     <li class="nav__item">
                         <a class="nav__link" href="#hobby">Hobby</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#skills">Skills and Project</a>
                     </li>
                     <li class="nav__item">
                         <a class="nav__link" href="#code">Code</a>
@@ -42,37 +42,101 @@
         </div>
     </header>
     <main class="main">
-        <section class="section section-pfoto">
-            <h1>Sianko Oleg </h1>
+        <section class="section section-photo">
+            <div class="section-photo__wrapper">
+                <h1>Senko Oleg </h1>
+                <h3 class="section-photo__wrapper-title">Junior Front-end Developer</h3>
+            </div>
             <img class="my-pfoto" src="./assets/my-pfoto/IMG_20191231_195230.jpg" alt="my-pfoto">
-            <h3>Junior Front-end Developer</h3>
+
         </section>
-        <section class="section section-contacts">
-            <h2 class="titles2" id="contacts">Contacts</h2>
-            <ul class="list-contacts">
-                <li>Minsk Belarus</li>
-                <li>phone: +375 29 7631758 (Viber)</li>
-                <li>email: senkooleg@gmail.com</li>
-                <li>discord: OlegMinsk(@Oleegg)</li>
-            </ul>
-        </section>
-        <section class="section">
-            <h2 class="titles2" id="summary">Summary</h2>
-            <span class="summary-text">
-                Engineer for alarm systems, fire alarm systems, urveillance and access control systems, with over 10
-                years of experience.
-                Now I'm studying to be a programmer. In my work, I strive to thoroughly understand the task at hand
-                in order to complete it as well as possible.
-                Responsible and conscientious. Made adaptive layout, custom video and audio players, light games
-                like tic-tac-toe. Familiar with server requests.
-                I am married, and I have two sons.
-            </span>
-        </section>
+        <div class="wrapper">
+            <div class="content">
+                <div class="content__hash">
+                    <section class="section section-skills">
+                        <div class="skills-wrapp">
+                            <h2 class="titles2" id="skills">Skills and Project</h2>
+                            <div class="section-skills-wrapper">
+                                <ul class="section-skills__list">
+                                    <li>Independent study:
+                                        <ul class="section-skills__list-skills">
+                                            <li><svg class="icon-logo">
+                                                    <use xlink:href="./assets/svg-png/sprite.svg#html"></use>
+                                                </svg>HTML</li>
+                                            <li><svg class="icon-logo">
+                                                    <use xlink:href="./assets/svg-png/sprite.svg#css"></use>
+                                                </svg>CSS</li>
+                                            <li><svg class="icon-logo">
+                                                    <use xlink:href="./assets/svg-png/sprite.svg#scss"></use>
+                                                </svg>SCSS</li>
+                                            <li><svg class="icon-logo">
+                                                    <use xlink:href="./assets/svg-png/sprite.svg#js"></use>
+                                                </svg>JS</li>
+                                            <li><svg class="icon-logo">
+                                                    <use xlink:href="./assets/svg-png/sprite.svg#git"></use>
+                                                </svg>Git</li>
+                                            <li><svg class="icon-logo">
+                                                    <use xlink:href="./assets/svg-png/sprite.svg#react"></use>
+                                                </svg>React js</li>
+                                            <li><svg class="icon-logo">
+                                                    <use xlink:href="./assets/svg-png/sprite.svg#ts"></use>
+                                                </svg>TypeScript</li>
+                                            <li><svg class="icon-logo">
+                                                    <use xlink:href="./assets/svg-png/sprite.svg#webpack"></use>
+                                                </svg>Webpack</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="projects"><a
+                                            href="https://rolling-scopes-school.github.io/oleegg-JSFEPRESCHOOL/portfolio/">Portfolio
+                                            (RS
+                                            school-progect + custom video player)</a>
+                                    </li>
+                                    <li class="projects"><a
+                                            href="https://rolling-scopes-school.github.io/oleegg-JSFEPRESCHOOL/movie-api">little
+                                            work
+                                            with API</a>
+                                    </li>
+                                    <li class="projects"><a
+                                            href="https://rolling-scopes-school.github.io/oleegg-JSFEPRESCHOOL/game">little
+                                            GAME JS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section section-contacts">
+                        <h2 class="titles2" id="contacts">Contacts</h2>
+                        <ul class="section-contacts__list">
+                            <li>Minsk Belarus</li>
+                            <li>phone: +375 29 7631758 (Viber)</li>
+                            <li>email: senkooleg@gmail.com</li>
+                            <li>discord: OlegMinsk(@Oleegg)</li>
+                        </ul>
+                    </section>
+                </div>
+                <section class="section">
+                    <h2 class="titles2" id="summary">Summary</h2>
+                    <span class="summary-text">
+                        Engineer for alarm systems, fire alarm systems, urveillance and access control systems, with
+                        over 10
+                        years of experience.
+                        Now I'm studying to be a programmer. In my work, I strive to thoroughly understand the task at
+                        hand
+                        in order to complete it as well as possible.
+                        Responsible and conscientious. Made adaptive layout, custom video and audio players, light games
+                        like tic-tac-toe. Familiar with server requests.
+                        I am married, and I have two sons.
+                    </span>
+                </section>
+            </div>
+        </div>
         <section class="section section-hobby">
             <h2 class="titles2" id="hobby">Hobby</h2>
-            <ul class="list-hobby">
+            <ul class="section-hobby__list">
                 <li>Active rest
-                    <ul class="list-active__rest">
+                    <ul class="section-hobby__list-rest">
                         <li>kayaks</li>
                         <li>bicycles</li>
                         <li>volleyball</li>
@@ -81,56 +145,12 @@
                 <li>computer games</li>
             </ul>
         </section>
-        <section class="section section-skills">
-            <h2 class="titles2" id="skills">Skills and Project</h2>
-            <ul class="list-active__rest">
-                <li>Independent study:
-                    <ul class="list-skills">
-
-                        <li><svg class="icon-logo">
-                                <use xlink:href="./assets/svg-png/sprite.svg#html"></use>
-                            </svg> HTML</li>
-
-                        <li><svg class="icon-logo">
-                                <use xlink:href="./assets/svg-png/sprite.svg#css"></use>
-                            </svg> CSS</li>
-
-                        <li><svg class="icon-logo">
-                                <use xlink:href="./assets/svg-png/sprite.svg#js"></use>
-                            </svg> JS</li>
-
-                        <li><svg class="icon-logo">
-                                <use xlink:href="./assets/svg-png/sprite.svg#git"></use>
-                            </svg> Git</li>
-
-                        <li><svg class="icon-logo">
-                                <use xlink:href="./assets/svg-png/sprite.svg#react"></use>
-                            </svg> basics React js</li>
-                        <li><svg class="icon-logo">
-                                <use xlink:href="./assets/svg-png/sprite.svg#ts"></use>
-                            </svg> basic TypeScript</li>
-                    </ul>
-                </li>
-            </ul>
-            <ul>
-                <li class="project"><a
-                        href="https://rolling-scopes-school.github.io/oleegg-JSFEPRESCHOOL/portfolio/">Portfolio (RS
-                        school-progect + custom video player)</a>
-                </li>
-                <li class="project"><a
-                        href="https://rolling-scopes-school.github.io/oleegg-JSFEPRESCHOOL/movie-api">little work
-                        with API</a>
-                </li>
-                <li class="project"><a href="https://rolling-scopes-school.github.io/oleegg-JSFEPRESCHOOL/game">little
-                        GAME JS</a>
-                </li>
-            </ul>
-        </section>
-        <section class="section section__code">
-            <h2 class="titles2" id="code">Code</h2>
-            <p class="code-title">WeIrD StRiNg CaSe 6kyu</p>
-            <pre class="pre-code">
-                    <code class="code__text">
+        <div class="section-code">
+            <section class="section ">
+                <h2 class="titles2" id="code">Code</h2>
+                <p class="section-code__title">WeIrD StRiNg CaSe 6kyu</p>
+                <pre class="pre-code">
+                    <code class="pre-code__text">
 function toWeirdCase(string){
     let x = string.split(' ')
     let y = x.map(element => 
@@ -142,22 +162,22 @@ function toWeirdCase(string){
     }
                     </code>
                 </pre>
-        </section>
+            </section>
+        </div>
         <section class="section section-education">
             <h2 class="titles2" id="education">Education</h2>
-            <p>College of mehenical-technology, Pedagogical university.</p>
+            <p class="section-education__text">College of mehenical-technology, Pedagogical university.</p>
         </section>
         <section class="section section-languages">
             <h2 class="titles2" id="languages">Languages</h2>
-            <ul class="list-languages">
+            <ul class="section-languages__list">
                 <li>Russian - native</li>
                 <li>A1 I'm studying English</li>
             </ul>
         </section>
-
     </main>
-    <footer>
-        <div class="container footer">
+    <footer class=" footer">
+        <div class="container">
             <p>2021 <a class="github" href="https://github.com/Oleegg">Oleegg</a></p>
         </div>
     </footer>
