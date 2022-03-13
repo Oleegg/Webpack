@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class=" container-nav">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#contacts">Contacts</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#summary">Summary</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#hobby">Hobby</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#skills">Skills and Project</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#code">Code</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#education">Education</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#languages">Languages</a>
+                    </li>
+                </ul>
+                <div class="burger">
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section section-pfoto">
+            <h1>Sianko Oleg </h1>
+            <img class="my-pfoto" src="./assets/my-pfoto/IMG_20191231_195230.jpg" alt="my-pfoto">
+            <h3>Junior Front-end Developer</h3>
+        </section>
+        <section class="section section-contacts">
+            <h2 class="titles2" id="contacts">Contacts</h2>
+            <ul class="list-contacts">
+                <li>Minsk Belarus</li>
+                <li>phone: +375 29 7631758 (Viber)</li>
+                <li>email: senkooleg@gmail.com</li>
+                <li>discord: OlegMinsk(@Oleegg)</li>
+            </ul>
+        </section>
+        <section class="section">
+            <h2 class="titles2" id="summary">Summary</h2>
+            <span class="summary-text">
+                Engineer for alarm systems, fire alarm systems, urveillance and access control systems, with over 10
+                years of experience.
+                Now I'm studying to be a programmer. In my work, I strive to thoroughly understand the task at hand
+                in order to complete it as well as possible.
+                Responsible and conscientious. Made adaptive layout, custom video and audio players, light games
+                like tic-tac-toe. Familiar with server requests.
+                I am married, and I have two sons.
+            </span>
+        </section>
+        <section class="section section-hobby">
+            <h2 class="titles2" id="hobby">Hobby</h2>
+            <ul class="list-hobby">
+                <li>Active rest
+                    <ul class="list-active__rest">
+                        <li>kayaks</li>
+                        <li>bicycles</li>
+                        <li>volleyball</li>
+                    </ul>
+                <li>RC cars</li>
+                <li>computer games</li>
+            </ul>
+        </section>
+        <section class="section section-skills">
+            <h2 class="titles2" id="skills">Skills and Project</h2>
+            <ul class="list-active__rest">
+                <li>Independent study:
+                    <ul class="list-skills">
+
+                        <li><svg class="icon-logo">
+                                <use xlink:href="./assets/svg-png/sprite.svg#html"></use>
+                            </svg> HTML</li>
+
+                        <li><svg class="icon-logo">
+                                <use xlink:href="./assets/svg-png/sprite.svg#css"></use>
+                            </svg> CSS</li>
+
+                        <li><svg class="icon-logo">
+                                <use xlink:href="./assets/svg-png/sprite.svg#js"></use>
+                            </svg> JS</li>
+
+                        <li><svg class="icon-logo">
+                                <use xlink:href="./assets/svg-png/sprite.svg#git"></use>
+                            </svg> Git</li>
+
+                        <li><svg class="icon-logo">
+                                <use xlink:href="./assets/svg-png/sprite.svg#react"></use>
+                            </svg> basics React js</li>
+                        <li><svg class="icon-logo">
+                                <use xlink:href="./assets/svg-png/sprite.svg#ts"></use>
+                            </svg> basic TypeScript</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li class="project"><a
+                        href="https://rolling-scopes-school.github.io/oleegg-JSFEPRESCHOOL/portfolio/">Portfolio (RS
+                        school-progect + custom video player)</a>
+                </li>
+                <li class="project"><a
+                        href="https://rolling-scopes-school.github.io/oleegg-JSFEPRESCHOOL/movie-api">little work
+                        with API</a>
+                </li>
+                <li class="project"><a href="https://rolling-scopes-school.github.io/oleegg-JSFEPRESCHOOL/game">little
+                        GAME JS</a>
+                </li>
+            </ul>
+        </section>
+        <section class="section section__code">
+            <h2 class="titles2" id="code">Code</h2>
+            <p class="code-title">WeIrD StRiNg CaSe 6kyu</p>
+            <pre class="pre-code">
+                    <code class="code__text">
+function toWeirdCase(string){
+    let x = string.split(' ')
+    let y = x.map(element => 
+    element.split('')
+    .map((el, i) => i % 2 === 0 ?
+    el.toUpperCase()
+    : el.toLowerCase()).join(''))
+    return y.join(' ')
+    }
+                    </code>
+                </pre>
+        </section>
+        <section class="section section-education">
+            <h2 class="titles2" id="education">Education</h2>
+            <p>College of mehenical-technology, Pedagogical university.</p>
+        </section>
+        <section class="section section-languages">
+            <h2 class="titles2" id="languages">Languages</h2>
+            <ul class="list-languages">
+                <li>Russian - native</li>
+                <li>A1 I'm studying English</li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container footer">
+            <p>2021 <a class="github" href="https://github.com/Oleegg">Oleegg</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

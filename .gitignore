@@ -1,0 +1,13 @@
+*.*~
+*[-\.]lock.json
+.vscode
+.vs
+.idea
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.log
+*.lock
+*.tmp
+node_modules
