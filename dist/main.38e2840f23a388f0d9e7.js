@@ -1,0 +1,2 @@
+!function(){"use strict";var e=document.querySelector(".nav__list"),t=document.querySelector(".burger"),n=document.querySelectorAll(".nav__item");function c(){t.classList.remove("open"),e.classList.remove("open")}t.addEventListener("click",(function(){t.classList.toggle("open"),e.classList.toggle("open")})),n.forEach((function(e){return e.addEventListener("click",c)}))}();
+//# sourceMappingURL=main.38e2840f23a388f0d9e7.js.map

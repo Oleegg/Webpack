@@ -1,1 +1,0 @@
-{"version":3,"file":"main.470c4e686c14c1ba0769.js","mappings":";;;;;AAAAA,OAAO,CAACC,GAAR,CAAY,CAAZ,E","sources":["webpack://webpack/./src/index.js"],"sourcesContent":["console.log(1);"],"names":["console","log"],"sourceRoot":""}

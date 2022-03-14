@@ -3,17 +3,21 @@
 html{
 	scroll-behavior: smooth;
 	font-family: Roboto;
-	background: url('../assets/my-pfoto/network-1.jpg');
-	background-blend-mode: color;
+	// background: url('../assets/my-pfoto/network-1.jpg');
+	// background-blend-mode: color;
 		
-		background-size: 100%;
-	color: rgb(0, 163, 22);
+	// background-size: 100%;
+	background: repeating-linear-gradient(to bottom left, rgba(108, 110, 121, 0.63), rgb(72, 75, 117),rgb(48, 48, 51));
+	color: aliceblue;
 }
 .header {
 	min-height: 100px;
 	display: flex;
 	align-items: center;
-	// border-bottom: 2px solid rgb(26, 23, 23);
+	// background: url('../assets/my-pfoto/network-1.jpg');
+	// background-blend-mode: color;		
+	// background-size: 100%;
+	
 	margin-bottom: 30px;
 	
 }
@@ -24,7 +28,7 @@ html{
 
 }
 .nav {
-    
+    display: flex;
 	
 		&__list {
             display: flex;
@@ -44,9 +48,62 @@ html{
 		}
 }
 .burger {
-	display: none;
+	position: relative;
+    width: 50px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+    z-index: 10;
+	margin-left: auto;
+    cursor: pointer;    
+    display: none;
 }
+.burger::after,.burger::before{
+	content: '';
+	position: absolute;
+	background-color: aliceblue;
+	width: 100%;
+	height: 3px;
+}
+.burger::before{
+	bottom: 0;
+}
+.burger span{
+    position: absolute;
+    background-color: aliceblue;
+    width: 100%;
+    height: 3px;
+    top: 13px;
+    right: 0;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 768px){
+	.burger {
+	display: block;	
+	}
+	.container-nav{
+		width: 100%;
+		padding: 30px;
+	}
+	.nav{
+		background: url('../assets/my-pfoto/network-1.jpg');
+	background-blend-mode: color;		
+	background-size: 100%;
+	height: 100vh;
+			&__list{
+				flex-direction: column;
+			}
+		}
+}
+
 .main {
+
+		&__header{
+			display: flex;
+			max-width: 1200px;
+    		margin: 0 auto;
+		}
     
 }
 .section {
@@ -59,7 +116,7 @@ html{
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 20px;
-	
+	max-width: 60%;
 		&__wrapper{
 			
 		}	
@@ -106,59 +163,91 @@ html{
 	// 	background-size: 100%;
 		
 	}
-	.content{
-		max-width: 1200px;
-		margin: 0 auto;
-		display: flex;
-		flex-direction: column;
-		    &__hash{
+	
+	.section-skills {
+		
 
+			&__wrapp {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+					h2{
+						
+					}
+				
 			}
 	}
-	.skills-wrapp{
-		display: flex;
-		flex-direction: column;
+	.titles2 {
 	}
-.section-skills {
-
-		h2{
-			margin: 20px auto;
-			letter-spacing: 3px;
-			color: rgb(60, 133, 57);
-		}
-		&__list {
-			list-style: none;
-			color: rgb(55, 192, 51);
-			font-size: 1.2rem;
-				}
+	.section-skills-wrapper {
+		display: flex;
+	
+			&__list-left {
+				list-style: none;
+					li{
+						display: flex;
+						align-items: center;
+						margin-bottom: 20px;
+					}
+				
+			}
+	
+			&__list-right {
+				list-style: none;
+					li{
+						display: flex;
+						align-items: center;
+						margin-bottom: 20px;
+					}
+			}
+	}
+	.icon-logo {
+		width: 30px;
+		height: 30px;
+		margin-right: 20px;
+	}
+	.laptop {
+		border-radius: 20px;
+		margin: 0 20px;
+		max-width: 300px;
+	}
+	.projects {
 		
-		&__list-skills{
-			list-style: none;
-		
-		}
-		&__list-skills li{
-			display: flex;
-			align-items: center;
-			margin-top: 10px;
-		}
-}
-.section-skills-wrapper{
-	display: flex;
-}
-.icon-logo {
-	width: 30px;
-	height: 30px;
-	margin-right: 20px;
-}
-.projects {
-	list-style: none;
-	margin-bottom: 10px;
-	font-size: 1.2rem;
-}
-.projects a{	
-	text-decoration: none;
-	color: rgb(105, 182, 69);
-}
+			&__list {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 20px;
+				overflow: hidden;
+			}
+	
+			&__list-li {
+				display: flex;
+				flex-direction: column;
+				width: 30%;
+				height: 200px;
+				
+			}
+			&__list-li a{
+				position: relative;
+				text-decoration: none;
+			}
+			&__list-li a p{
+				position: absolute;
+				color: aliceblue;
+				top: 30%;
+				left: 10%;
+			}
+			
+			&__list-li-img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				opacity: 50%;
+			}
+	}
+	
+	
 .section-code {
 	// background: url('../assets/my-pfoto/164542.jpg'), rgba(0, 0, 0, 0.8);
 	// background-blend-mode: color;
@@ -193,8 +282,10 @@ html{
 	font-size: 1.3rem;
 }
 .footer {
+	// background: url('../assets/my-pfoto/network-1.jpg');
+	// background-blend-mode: color;		
+	// background-size: 100%;
 	
-	border-top: 2px solid rgb(26, 23, 23);
 }
 .github {
 	margin-left: 30px;
