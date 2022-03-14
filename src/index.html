@@ -12,10 +12,11 @@
 <body>
     <header class="header">
         <div class=" container-nav">
+            <!-- <img class="cv" src="./assets/svg-png/cv_102350.png" alt="cv"> -->
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a class="nav__link" href="#skills">Skills and Project</a>
+                        <a class="nav__link" href="#skills">Skills and Projects</a>
                     </li>
                     <li class="nav__item">
                         <a class="nav__link" href="#contacts">Contacts</a>
@@ -126,34 +127,37 @@
                 </div>
             </div>
         </section>
-        <section class="section">
-            <h2 class="titles2" id="summary">Summary</h2>
-            <span class="summary-text">
-                Engineer for alarm systems, fire alarm systems, urveillance and access control systems, with
-                over 10
-                years of experience.
-                Now I'm studying to be a programmer. In my work, I strive to thoroughly understand the task at
-                hand
-                in order to complete it as well as possible.
-                Responsible and conscientious. Made adaptive layout, custom video and audio players, light games
-                like tic-tac-toe. Familiar with server requests.
-                I am married, and I have two sons.
-            </span>
-        </section>
+        <div class="section bloc-wrapper">
+            <section class=" summary">
+                <h2 class="summary__title" id="summary">Summary</h2>
+                <span class="summary__text">
+                    Engineer for alarm systems, fire alarm systems, urveillance and access control systems, with
+                    over 10
+                    years of experience.
+                    Now I'm studying to be a programmer. In my work, I strive to thoroughly understand the task at
+                    hand
+                    in order to complete it as well as possible.
+                    Responsible and conscientious. Made adaptive layout, custom video and audio players, light games
+                    like tic-tac-toe. Familiar with server requests.
+                    I am married, and I have two sons.
+                </span>
+            </section>
 
-        <section class="section section-hobby">
-            <h2 class="titles2" id="hobby">Hobby</h2>
-            <ul class="section-hobby__list">
-                <li>Active rest
-                    <ul class="section-hobby__list-rest">
-                        <li>kayaks</li>
-                        <li>bicycles</li>
-                        <li>volleyball</li>
-                    </ul>
-                <li>RC cars</li>
-                <li>computer games</li>
-            </ul>
-        </section>
+            <section class=" section-hobby">
+                <h2 class="titles2" id="hobby">Hobby</h2>
+                <ul class="section-hobby__list">
+                    <li>Active rest
+                        <ul class="section-hobby__list-rest">
+                            <li>kayaks</li>
+                            <li>bicycles</li>
+                            <li>volleyball</li>
+                        </ul>
+                    <li>RC cars</li>
+                    <li>computer games</li>
+                </ul>
+            </section>
+        </div>
+        <div class="bloc-wrapper"></div>
         <div class="section-code">
             <section class="section ">
                 <h2 class="titles2" id="code">Code</h2>
@@ -173,10 +177,12 @@ function toWeirdCase(string){
                 </pre>
             </section>
         </div>
+
         <section class="section section-education">
             <h2 class="titles2" id="education">Education</h2>
             <p class="section-education__text">College of mehenical-technology, Pedagogical university.</p>
         </section>
+        </div>
         <section class="section section-languages">
             <h2 class="titles2" id="languages">Languages</h2>
             <ul class="section-languages__list">

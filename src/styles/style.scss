@@ -1,8 +1,10 @@
-@use 'font-styles';
+// @use 'font-styles';
 
 html{
 	scroll-behavior: smooth;
-	font-family: Roboto;
+	// font-family: Roboto;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 18px;
 	// background: url('../assets/my-pfoto/network-1.jpg');
 	// background-blend-mode: color;
 		
@@ -22,14 +24,19 @@ html{
 	
 }
 .container-nav {
-	max-width: 1200px;
+	width: 1200px;
     margin: 0 auto;
 	padding: 20px 20px 0;
-
+	display: flex;
+	
+}
+.cv{
+	width: 50px;
+	display: none;
 }
 .nav {
     display: flex;
-	
+	margin-left: auto;
 		&__list {
             display: flex;
 			align-items: center;
@@ -102,9 +109,8 @@ html{
 		&__header{
 			display: flex;
 			max-width: 1200px;
-    		margin: 0 auto;
-		}
-    
+        	margin: 0 auto;
+		}    
 }
 .section {
     max-width: 1200px;
@@ -118,42 +124,39 @@ html{
 	margin-bottom: 20px;
 	max-width: 60%;
 		&__wrapper{
-			
+			h1{
+				letter-spacing: 2px;
+				font-size: 2.5rem;
+			}
 		}	
 		&__wrapper-title {
-			
+			font-size: 1.4rem;
 		}
 }
 .my-pfoto {
 	width: 200px;
-	margin-left: 200px;
+	margin-left: 150px;
 	
 }
 .section-contacts {
-		h2{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	h2{
 			margin: 20px auto;
 			letter-spacing: 3px;
-			color: rgb(60, 133, 57);
+			color: aliceblue;
 		}
 		&__list {
 			list-style: none;
-			color: rgb(55, 192, 51);
+			color: aliceblue;
 			font-size: 1.2rem;
 		}
 		&__list li{
 			margin-bottom: 20px;
-		}
-}
-.titles2 {
-}
-.summary-text {
-}
-.section-hobby {
-
-		&__list {
-		}
-
-		&__list-rest {
 		}
 }
 .wrapper{
@@ -182,7 +185,9 @@ html{
 	}
 	.section-skills-wrapper {
 		display: flex;
-	
+		justify-content: space-around;
+		width: 100%;
+		margin-bottom: 30px;
 			&__list-left {
 				list-style: none;
 					li{
@@ -247,7 +252,34 @@ html{
 			}
 	}
 	
-	
+.bloc-wrapper{
+	display: flex;
+	gap: 20px;
+}	
+.summary {
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__title {
+		
+	}
+
+	&__text {
+		font-size: 1.1rem;
+	}
+}
+.section-hobby {
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__list {
+	}
+
+	&__list-rest {
+	}
+}
 .section-code {
 	// background: url('../assets/my-pfoto/164542.jpg'), rgba(0, 0, 0, 0.8);
 	// background-blend-mode: color;
